@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">RestCountriesTechApp</string>
+    <string name="ouch_error">Ouch! Error!</string>
+    <string name="population">Population</string>
+    <string name="area">Area</string>
+    <string name="language">Language</string>
+    <string name="capital">Capital</string>
+    <string name="calling_code">Calling Code</string>
+    <string name="currency">Currency</string>
+    <string name="general_information">General Information</string>
+    <string name="geography">Geography</string>
+    <string name="extras">Extras</string>
+    <string name="region_subregion">region/subregion</string>
+    <string name="wiki">Wiki</string>
+    <string name="timezones">TimeZones</string>
+    <string name="gini">Gini</string>
+    <string name="search_wiki">Search Wiki for %s</string>
+    <string name="menu_order_by">Order By</string>
+    <string name="menu_order_by_name">name</string>
+    <string name="menu_order_by_population">population</string>
+    <string name="menu_order_by_area">area</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+                name="country"
+                type="dev.restcountries.app.model.BasicCountryInfo"/>
+    </data>
+
+    <LinearLayout
+            android:id="@+id/countryView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/countryFlag"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/shadow_221225"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_221225"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="4dp"
+                android:layout_marginTop="1dp">
+
+            <TextView
+                    android:id="@+id/countryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    android:gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:text="@{country.name}"/>
+
+            <TextView
+                    android:layout_below="@+id/countryName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:id="@+id/countryExtraInfoValue"/>
+
+            <ImageView
+                    android:layout_below="@+id/countryName"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/countryExtraInfoValue"
+                    android:ellipsize="end"
+                    android:id="@+id/countryExtraInfoIcon"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</layout>
